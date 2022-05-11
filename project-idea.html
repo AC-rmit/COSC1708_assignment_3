@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>We want Teslas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo"><em>We want</em> Teslas</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Personal Website</a>
+									<ul>
+										<li><a href="https://ac-rmit.github.io/cosc1078-Assignment-1/">Aaron Chan</a></li>
+										<li><a href="https://acutecerebralenema.github.io/Assignment-1/home.html">Aby Thomas</a></li>
+										<li><a href="https://adam12511.github.io/Assignment-1-ICT/">Adam Lee</a></li>
+										<li><a href="https://mihir1537.github.io/ProfileAssignment/">Mihir Anand</a></li>
+										<li><a href="https://midnightwolf98.github.io/COSC1078A1/">Sahil Narayan</a></li>
+										<li><a href="https://elaina525.github.io/my-profile-Xiaolong-Guo/">Xiaolong Guo</a></li>
+									</ul>
+								</li>
+								<li><a href="team-profiles.html">Team Profiles</a></li>
+								<li><a href="ideal-jobs.html">Ideal Jobs</a></li>
+								<li><a href="interview.html">Interview</a></li>
+								<li>
+										<a href="it-technologies-AV.html">IT Technologies</a>
+										<ul>
+											<li><a href="it-technologies-AV.html">Autonomous Vehicles</a></li>
+											<li><a href="it-technologies-2.html">ITT-2</a></li>
+											<li><a href="it-technologies-cloud.html">Cloud</a></li>
+											<li><a href="it-technologies-Cybersecurity.html">Cybersecurity</a></li>
+										</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Project Idea</h2>
+									</header>
+
+									<span class="image featured"><img src="images/project-idea2.png" alt="" /></span>
+
+									<h3>Overview</h3>
+									<p>For the project, we want to develop a smartphone app called Parker,
+										 which aims to help people in Australia find parking lot with available
+										  parking space when they are driving out. This app would be available
+											 both in iOS and Android system. There is only one goal of our project
+											  app – find a parking space.</p>
+									<h3>Motivation</h3>
+									<p>A few years ago, I have spent time together with my family in a weekend
+										 when we first came to Melbourne. It took us 20 minutes circling around
+										 the parking lot outside the shopping mall to find a parking space. We
+										  eventually realised that the parking lot was full, so we can only
+											drive out and find another parking lot. I believe that many people
+											 have meet the same situation as we did. <img src="images/Motivation1.jpg" style="float:right;width:600px;height:400px;padding:15px"></p>
+									<p>When looking for parking space outside, there are many problems such as: </p>
+									<p>- Time</p>
+									<p>- Distance</p>
+									<p>- Cost</p>
+									<p>- Accessibility</p>
+									<p>We can easily find the causing of the problems above according to the data
+										from <a href="https://www.statista.com/statistics/632547/australia-registered-vehicles/">Statista</a>
+									There are approximately 20.14 million motor vehicles in Australia as of January
+									2021, and the population is 26.02 million. Around 77.4% of Australian may choose to
+									 drive out during weekends of holiday.</p>
+									<p><img src="images/Motivation2.jpg" alt=""width="600" height="400" style="float: left;margin: 15px;"  >An <a href="https://www.degruyter.com/document/doi/10.1515/eng-2020-0025/html?lang=en">article</a> published in De Gruyter on 10th March 2020, by Jan Lizbetin
+										 and Ladislav Bartuska talked about the issue about lacking parking
+										  spaces for road freight transport in cities and dealt with the issue
+											of rest area's location for road freight vehicles in the selected area.
+											 Static traffic (car parking) is one of the most difficult aspects of
+											  urban transportation. Insufficient capacity or inadequate equipment,
+												 for example, cause problems in parking places for big freight vehicles
+												 in urban locations. Regional designs for the siting of truck parking
+												 lots have not been created in the Czech Republic; rest areas are
+												 primarily built on motorways. Drivers are compelled to use other
+												  routes to find alternate parking places, jeopardising the safety
+													 of the cargo being transported. Due to a scarcity of such parking
+													 spots, drivers are forced to break the European Agreement Concerning
+													  the Work of Crews of Vehicles Engaged in  International Road Transport
+														 (AETR) or, because of this agreement, park the truck before it
+														  can be loaded. </p>
+									<h3>Decription</h3>
+									<p>To achieve our goal, the app should contain two main functions: </p>
+									<p>- Detecting the parking lot and show the empty parking spaces</p>
+									<p>- A navigation system to guide the user to the destination </p>
+									<h4>How do we detect the parking lot? </h4>
+									<p>We found an <a href="https://medium.com/the-research-nest/parking-space-detection-using-deep-learning-9fc99a63875e">article</a> by Mohit Saini (Dec 3, 2019), which teaches us to build a parking space detection system. In general, there are 3 steps to do this: <img src="images/Description1.png" style="float:right;width:600px;height:400px;padding:15px"></p>
+									<p>- Detection of parking spots </p>
+									<p>- Detection of cars </p>
+									<p>- Calculate IoU (Intersection Over Union) </p>
+									<h4>How will the navigation system work? </h4>
+									<p>This part will be like a map app such as google map, there will be a search bar in the home page. Once the user types the destination into the search bar, nearby parking lots will be shown in the map. Each parking lot has a colour bar next to it. Red means it is full or over 80% parking spaces are taken, orange means only 40% parking spaces left in the parking lot, yellow means the rest parking spaces are around 50%, and green means there are still a lot parking spaces in this parking lot. It gives the user an intuitive overview of the parking lots nearby. </p>
+									<p>Users can see details of the parking lot by clicking it such as opening time, fees, contact method and so on. Also, to avoid a clash such as users choose the same parking space accidentally, Parker will ask users for their location, then each users’ position will be shown in the map. There will be a thinner line with lighter colour connects the other user to their own destination parking lots so that you can avoid parking lots with heavy traffic flow. The user will also be counted in after choosing the parking lot. After choosing which one to go, Parker will start the direction. However, Parker will not directly lead the user to the exact parking space in the parking lot, instead, Parker will show the recommended floor of the parking lot to go, which has most empty parking spaces.  </p>
+									<h4>Some advanced functions: </h4>
+									<p><img src="images/Description2.jpeg" alt=""width="600" height="400" style="float: left;margin: 15px;">Nowadays, people's environmental awareness is getting stronger and stronger, more people choose to buy an electric car instead of traditional car burns petrol. Therefore, users of Parker can set a filter to only see parking lots with charging pile. Also, the filter can do more than just search for charging piles, users can set the filter to find which parking lots meet the requirements they need. </p>
+									<p>The classic theme of Parker would be adapted to the user’s phone theme. But the user can change the app’s theme anytime in settings. Besides some basic reset themes, users can customise the app interface as they like freely. When the users open Parker for the first time, there will be a guidance teaching people to use this app. Users can review the guidance anytime if they forget how to use the app. </p>
+									<p>In case the users meet problems or bugs while using Parker, they can contact us and describe the bugs or problems through the “Report” button. Me and my partners (if I have) will look through the feedbacks and solve the problems to make users’ experience better while using Parker. </p>
+									<p>Parker can also assist another app such as Uber. Uber and other rideshare companies are becoming more popular and less people within cities are buying cars, but we've all had issues where you call an uber and you see come close to you, but it cannot stop because it is not legally allowed to park in front of you, so it must circle the block again, searching for a safe place to park. By being able to identify safe, available parking spaces before you arrive at your destination, you can improve the rate at which people arrive at their destination and you make the entire process safer and more convenient. less time wasted. less money wasted; less fuel wasted. </p>
+									<p><img src="images/Description3.jpg" style="float:right;width:600px;height:400px;padding:15px">Accessibility, as is mentioned above is another point. An <a href="https://www.nature.com/articles/s41598-020-71867-1">article</a> published in nature on 8th October 2020 discussed about parking accessibility. For example, some elder people use a walking stick and sometimes a walking frame. Some people may require wheelchairs. but there is always the possibility that once you arrive at wherever you are going, the accessible parking spots will already be taken. and sometimes it is the case that these accessible parking spots are taken by people who do not even need to take them. So, you end up having to park further away, which, over time, has an impact on both physical and mental wellbeing. By being able to plan and determine whether your accessible parking spots are taken, you might be able to still determine if there are other non-disabled that would still be close enough to your destination, so you do not end up straining or injuring yourself. </p>
+									<p>Wheelchair users often need larger parking spots to unload their wheelchair. when a disabled parking spot is taken, their only other option is to use normal parking spots but if they could plan where they might find 2 parking spots next to each other, it would serve the same purpose as a disabled parking spot. </p>
+									<h4>Users’ experience: </h4>
+									<p>To use this app, users just need a phone that can connect to network and that is all. This app will be published both on iOS and Android app store. There is no need to worry about do not know how to use this app. The guidance will be detailed to make sure the elders also know how to use it. </p>
+									<p>However, we will need to design a survey in the future to get users’ feedback so that we can make Parker better. </p>
+									<h3>Tools and Technologies </h3>
+									<h4><a href="https://realpython.com/mobile-app-kivy-python/">Python:</a></h4>
+									<p>We will use Python to create the parking lot detecting system, with the help of Saini’s article. We will also use Python to build the app itself. In this part, we found an article by Mike Driscoll, which has a detailed tutorial of how to create an app by using package Kivy. </p>
+									<h4>SQLite: </h4>
+									<p>To build an app, a database system is necessary. We will need a database for storing all the parking lots’ details with the help of SQLite. In the beginning, we will design an ER-Diagram through Lucidchart to illustrate how the entire system work, then we will create the database in SQLite. </p>
+									<h4>Figma: </h4>
+									<p>At the beginning of this project, we will create a prototype for Parker with Figma. This requires our knowledge of User Centre Designed and User experience (UX). This can also help us improve Parker by gathering potential users’ feedback through the prototype. </p>
+									<h4>Anticipated problems: </h4>
+									<p>Acquiring licenses for the data from Google, Vicroads, parking data from local councils, getting the machine learning to analyse probabilities correctly. Communicating other apps such as Uber may incur a clash in corporate policy and some network security concerns when sourcing to a third-party entity. </p>
+									<h3>Outcome</h3>
+									<p>If our project is successful, people those who use Parker’s life will be more convenient. They can easily find suitable parking lots that meet their requirements, no need to waste time in tossing among parking lots. This will solve problems of finding empty parking spaces when driving out. We would be immensely proud of Parker if it does succeed in the future. </p>
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+
+
+					<!-- Icons -->
+					<div id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/Adam12511/Assignment-2-The-IT-World" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
