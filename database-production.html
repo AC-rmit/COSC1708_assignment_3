@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -72,6 +73,16 @@
 				<article>
 					<header>
 						<h2>Database Production</h2>
+						<p>While developing the database needed to operate the Parker application, research was done the process of attaining the information needed in a carpark guiding service and how to display it in a readable fashion. Aaron and Aby were assigned to develop the database with objectives of completing a logical model, develop a database in SQL and obtain and input actual data of Melbourne’s carparks. </p>
+						<p>The logical model was competed successfully with little difficulty as a web-based chart organiser, Lucidchart, had ready templates and tools specifically designed to develop models for databases. Most of the time this component had revolved our brainstorming what relevant information was needed to operate a parking app and how that information would be represented as tables in a database. Entity Relationship knowledge was used from both Aby’s learnings from RMIT’s Practical Database Concept course and Aaron’s own experience as a data operator in his work.</p>
+						<img width="100%" src="images\Carpark Logical Model.png" alt="">
+						<p>Further improvements were made to this model after Aby researched the City of Melbourne’s public database of carpark sensors to include street spaces as their own separate table due to the differences between car lots and individual parking spaces. This was also a great step in the third goal of obtaining parking information from a reliable source, as Aaron’s attempts to contact city councils were not returned with any reply.</p>
+						<p>A database has been made using an open-source program called DB Browser for SQLite and the tables have been created for a dummy trial, which would be tested under both JavaScript and Python to see if the information can correctly be extracted from the tables and viewed in other mediums such as a webapp.  </p>
+						<p>As no one on the team has had any experience with creating a mobile app, let alone an iOS app, testing an interface for the database would be done through JavaScript as it was more viable with the experience we did have. Using geographic coordinates from the data we retrieved from the City of Melbourne, we can display markers for the actual carparks on a map. </p>
+						<img width="49%" src="images\platform marker.png" alt="">
+						<img width="50%" src="images\marker.png" alt="">
+						<h3>Map software development</h3>
+						<p>We began development by identifying individual components required to be integrated into the map. Development was kickstarted by locating parking sensor data provided by the City of Melbourne (@ <a href="https://data.melbourne.vic.gov.au/">https://data.melbourne.vic.gov.au/</a>), outlining parking bay ID, the geographic location of the parking bay in latitude and longitude and the current occupancy status of 809 individual parking bays around Melbourne. It must be noted that the website outlined updates being made to the current parking sensors and warned of potential disruptions to data collection. Updates were expected to be conducted between December 2021 and April 2022; however no new data has been received as of March 30, 2022. Several other datasets were located detailing parking meter locations, parking costs, parking times and whether the bay catered towards disabled accessible parking.  </p>
 					</header>
 					<span class="image featured"><img src="" alt="" /></span>
 
